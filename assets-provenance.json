@@ -1,0 +1,120 @@
+{
+  "downloaded_utc": "2026-10-06",
+  "model_revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+  "assets": [
+    {
+      "path": "vendor/transformers.js",
+      "source_url": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1/+esm",
+      "bytes": 502057,
+      "source_sha256": "72bd2255af0cb33ee0167d439b78b1010b232c6cc2bc5e8c607167c5c8b84565",
+      "sha256": "b993347011c89b95c3c52b64f124178c8abd2c8fa9b97e98e4aa678c0a21db10",
+      "adjustments": [
+        "Two CDN imports changed to bundled local runtime modules",
+        "Source-map URL removed; no source-map artifact is required",
+        "Prominent modification notice added"
+      ]
+    },
+    {
+      "path": "vendor/onnxruntime-common.js",
+      "source_url": "https://cdn.jsdelivr.net/npm/onnxruntime-common@1.21.0/+esm",
+      "bytes": 19152,
+      "source_sha256": "cfe8e3e41ffb16ee99b8a2b9764dc8f6d9ef9ba9459912fe0bc756c4ce0969d8",
+      "sha256": "78c0712a406448755f861855e07f1a71aeac794212085b6dbfa774ec0bfe77bf",
+      "adjustments": [
+        "Source-map URL removed; no source-map artifact is required"
+      ]
+    },
+    {
+      "path": "vendor/onnxruntime-web.js",
+      "source_url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0-dev.20250409-89f8206ba4/+esm",
+      "bytes": 395000,
+      "source_sha256": "c223b5a5deb30887e53777e26afd160da06d5f45c7a54b22388b97c8bbb8241d",
+      "sha256": "7bb48eef7f93e8bf6e76b8f129c1615c5ba6a6f6904af323bb583ec2851959b3",
+      "adjustments": [
+        "Source-map URL removed; no source-map artifact is required"
+      ]
+    },
+    {
+      "path": "vendor/ort-wasm-simd-threaded.jsep.mjs",
+      "source_url": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1/dist/ort-wasm-simd-threaded.jsep.mjs",
+      "bytes": 44484,
+      "source_sha256": "08fb86ec433c78bfb032c5d84a68b8e8e5a8d81268fa39e24314179a5767a5b9",
+      "sha256": "08fb86ec433c78bfb032c5d84a68b8e8e5a8d81268fa39e24314179a5767a5b9",
+      "adjustments": [
+        "Source-map URL removed; no source-map artifact is required"
+      ]
+    },
+    {
+      "path": "vendor/ort-wasm-simd-threaded.jsep.wasm",
+      "source_url": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1/dist/ort-wasm-simd-threaded.jsep.wasm",
+      "bytes": 21596019,
+      "source_sha256": "c46655e8a94afc45338d4cb2b840475f88e5012d524509916e505079c00bfa39",
+      "sha256": "c46655e8a94afc45338d4cb2b840475f88e5012d524509916e505079c00bfa39",
+      "adjustments": []
+    },
+    {
+      "path": "models/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/config.json",
+      "source_url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/config.json",
+      "bytes": 650,
+      "source_sha256": "7135149f7cffa1a573466c6e4d8423ed73b62fd2332c575bf738a0d033f70df7",
+      "sha256": "7135149f7cffa1a573466c6e4d8423ed73b62fd2332c575bf738a0d033f70df7",
+      "adjustments": []
+    },
+    {
+      "path": "models/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer_config.json",
+      "source_url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer_config.json",
+      "bytes": 366,
+      "source_sha256": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3",
+      "sha256": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3",
+      "adjustments": []
+    },
+    {
+      "path": "models/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer.json",
+      "source_url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer.json",
+      "bytes": 711661,
+      "source_sha256": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+      "sha256": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+      "adjustments": []
+    },
+    {
+      "path": "models/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/onnx/model_quantized.onnx",
+      "source_url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/onnx/model_quantized.onnx",
+      "bytes": 22972370,
+      "source_sha256": "afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1",
+      "sha256": "afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1",
+      "adjustments": []
+    },
+    {
+      "path": "vendor/transformers.LICENSE",
+      "source_url": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1/LICENSE",
+      "bytes": 11358,
+      "source_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "adjustments": []
+    },
+    {
+      "path": "vendor/onnxruntime.LICENSE",
+      "source_url": "https://raw.githubusercontent.com/microsoft/onnxruntime/89f8206ba4/LICENSE",
+      "bytes": 1073,
+      "source_sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+      "adjustments": []
+    },
+    {
+      "path": "models/MODEL-LICENSE.txt",
+      "source_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "bytes": 11358,
+      "source_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "adjustments": []
+    },
+    {
+      "path": "models/MODEL-CARD.md",
+      "source_url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/751bff37182d3f1213fa05d7196b954e230abad9/README.md",
+      "bytes": 1767,
+      "source_sha256": "63ea99bf681a2e9eda4f6a537d5ed8fda95d1677111656da37e9cfd080c3af02",
+      "sha256": "63ea99bf681a2e9eda4f6a537d5ed8fda95d1677111656da37e9cfd080c3af02",
+      "adjustments": []
+    }
+  ]
+}

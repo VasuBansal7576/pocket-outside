@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pocket Outside</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#183d30;background:#f5f4ec;color-scheme:light}*{box-sizing:border-box}body{margin:0}main{max-width:760px;margin:4vh auto;padding:24px}header{margin-bottom:28px}.eyebrow{letter-spacing:.12em;font-size:12px;text-transform:uppercase;color:#557566}h1{font-size:clamp(38px,7vw,64px);letter-spacing:-.06em;margin:8px 0}h2{font-size:25px;letter-spacing:-.02em}p{line-height:1.6}section,.card,details{border:1px solid #cad5c7;background:#fffef7;border-radius:20px;padding:24px;margin:16px 0}label{display:block;font-weight:650;margin:16px 0 8px}textarea,select{width:100%;padding:14px;border:1px solid #9cab9d;border-radius:10px;font:inherit;background:white;color:inherit}textarea{min-height:96px}button{border:0;background:#22583f;color:white;border-radius:10px;padding:14px 18px;font:inherit;font-weight:650;cursor:pointer;margin:10px 6px 0 0}button.secondary{background:#e3ebe0;color:#183d30}button:disabled{opacity:.45;cursor:wait}.checks{display:flex;flex-wrap:wrap;gap:12px}.checks label{font-weight:400;font-size:15px;margin:4px 0}input[type=checkbox]{accent-color:#22583f;width:18px;height:18px;vertical-align:middle}.muted{color:#587161;font-size:14px}#status{min-height:1.6em}#mission{border:2px solid #22583f}#mission h2{margin-top:6px}#result{white-space:pre-line;font-size:19px}#tests{font-family:ui-monospace,monospace;font-size:13px;white-space:pre-wrap}.pocket #setup,.pocket header,.pocket details,.pocket footer{display:none}.pocket main{max-width:620px;margin:12vh auto}.pocket #mission{background:#183d30;color:#f5f4ec}.pocket .muted{color:#cbd9c4}a{color:#22583f}pre{white-space:pre-wrap;word-break:break-word;font:12px ui-monospace,monospace}summary{cursor:pointer;font-weight:650}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #b06b28;outline-offset:3px}@media(prefers-reduced-motion:no-preference){button:hover{filter:brightness(1.08)}}[hidden]{display:none!important}
+</style>
+<style>.pocket .eyebrow{color:#cbd9c4}.pocket #why{display:none}</style>
+<main>
+<header><div class="eyebrow">A little attention, outside</div><h1>Pocket Outside</h1><p>Pick one thing to notice. Read your card. Pocket your phone.</p></header>
+<section id="setup">
+<p class="muted">First preparation loads about 46 MB of open model and runtime assets for offline use. Your words stay in this tab. No account, paid API, GPS or saved activity history.</p>
+<button id="load">Prepare local AI</button><p id="status" role="status" aria-live="polite">AI has not loaded yet. Prepare it once while connected, then reuse this app offline.</p>
+<form id="form">
+<label for="wish">What would you like to notice?</label>
+<textarea id="wish" maxlength="280" placeholder="I want to hear the little chirps around me." required></textarea>
+<label for="minutes">Minutes available once you are outside</label>
+<select id="minutes"><option value="3">3 minutes</option><option value="5" selected>5 minutes</option><option value="10">10 minutes</option></select>
+<fieldset style="border:0;padding:0"><legend style="font-weight:650;margin:16px 0 8px">Choose only what is around you</legend>
+<div class="checks"><label><input type="checkbox" value="sky" name="feature">Open sky</label><label><input type="checkbox" value="plants" name="feature">Trees or plants</label><label><input type="checkbox" value="birds" name="feature">Bird sounds</label></div></fieldset>
+<label><input type="checkbox" id="still" checked>Stay in one spot</label>
+<p class="muted">Choose somewhere you already know is suitable. This app does not check weather, air quality, access or route safety. Observe wildlife without approaching it.</p>
+<button id="choose" disabled>Give me one activity</button>
+</form></section>
+<section id="mission" hidden aria-live="polite" aria-atomic="true"><p class="eyebrow" id="duration"></p><h2 id="title"></h2><p id="result"></p><p class="muted" id="why"></p><button id="pocket" class="secondary">Ready. Pocket the phone.</button><button id="back" class="secondary" hidden>Choose again</button></section>
+<details><summary>How the AI chooses</summary><p>A quantized MiniLM model turns your words and these original activity descriptions into normalized sentence embeddings. Cosine similarity ranks the activities that fit your checked surroundings, time and one-spot preference. The model retrieves a written card; it never invents a route or wildlife advice. Similarity is not a confidence or safety score.</p><p id="modelinfo" class="muted">MiniLM-L6-v2, Apache 2.0 weights. Transformers.js 3.8.1 and ONNX Runtime, WASM on CPU.</p><button id="verify" disabled class="secondary">Run verification</button><pre id="tests">Not run.</pre></details>
+
+<footer class="muted"><p>Only app and model assets are cached for offline reuse. Requests and activity choices stay in memory and disappear on reload. Your browser can clear cached assets at any time.</p><p>Credits: <a href="https://huggingface.co/Xenova/all-MiniLM-L6-v2">Xenova ONNX conversion</a>, <a href="https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2">sentence-transformers MiniLM</a>, <a href="https://github.com/huggingface/transformers.js">Transformers.js</a>.</p></footer>
+</main>
+<script type="module" src="./app.mjs"></script></html>

@@ -1,0 +1,32 @@
+{
+  "verified_on": "2026-10-06",
+  "automated_core_tests": {
+    "passed": 7,
+    "failed": 0,
+    "command": "node --test tests/core.test.mjs"
+  },
+  "real_model_browser_checks": {
+    "passed": 11,
+    "failed": 0,
+    "paraphrases": "Three initial-prototype examples retained as regression tests; not a held-out accuracy benchmark"
+  },
+  "observed_ui_checks": [
+    "No surroundings selected by default",
+    "Bird paraphrase selects authored sound card",
+    "No eligible surroundings returns no card",
+    "Input changes clear previous card",
+    "Pocket mode hides setup and technical matching note"
+  ],
+  "server_unavailable_check": {
+    "passed": true,
+    "method": "Local host at port 8128 stopped; cached page reloaded; model prepared; new cloud paraphrase matched authored cloud card",
+    "airplane_mode_tested": false
+  },
+  "limits": [
+    "Desktop Chrome only",
+    "No actual mobile hardware benchmark",
+    "No outdoor human field test",
+    "No measured wellbeing effect"
+  ],
+  "asset_hashes_verified": 13
+}
