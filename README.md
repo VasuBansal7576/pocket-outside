@@ -8,6 +8,13 @@ your phone, and do the activity.
 The model matches language; code enforces constraints. The app never generates
 routes, identifies wildlife, or checks weather and path safety.
 
+## Demo
+
+Watch the [34-second guided demo](assets/demo.mp4). It uses actual desktop
+browser captures, including a new request after the local server was stopped.
+It does not depict an outdoor field activity. The app and this repository were
+created on 6 October 2026 for Hacktoberfest Week 1: Touch Grass.
+
 ## Run
 
 The repository includes the necessary model and browser runtime assets.
@@ -94,4 +101,3 @@ Original app code is MIT licensed. Bundled dependencies and open model weights
 retain their own licenses. See LICENSE, NOTICE, the model card, and the
 included dependency license files. Codex assisted the implementation and
 verification. This is a new project started on 6 October 2026.
-
