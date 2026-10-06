@@ -10,7 +10,8 @@ routes, identifies wildlife, or checks weather and path safety.
 
 ## Demo
 
-Watch the [34-second guided demo](assets/demo.mp4). It uses actual desktop
+[Try the hosted app](https://vasubansal7576.github.io/pocket-outside/) or
+watch the [34-second guided demo](https://vasubansal7576.github.io/pocket-outside/demo.html). It uses actual desktop
 browser captures, including a new request after the local server was stopped.
 It does not depict an outdoor field activity. The app and this repository were
 created on 6 October 2026 for Hacktoberfest Week 1: Touch Grass.
